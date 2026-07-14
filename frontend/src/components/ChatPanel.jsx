@@ -54,6 +54,7 @@ const ChatPanel = () => {
       // 4. Populate form values
       if (data.form_state) {
         dispatch(populateForm(data.form_state));
+        window.dispatchEvent(new CustomEvent('refresh-logs'));
       }
 
     } catch (err) {
