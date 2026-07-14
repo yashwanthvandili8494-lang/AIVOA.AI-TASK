@@ -1,0 +1,35 @@
+# Virtual Environment
+backend/.venv/
+.venv/
+env/
+venv/
+ENV/
+
+# Python caching
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# Node.js dependencies
+frontend/node_modules/
+node_modules/
+
+# Local databases
+backend/interactions.db
+*.db
+*.sqlite
+
+# Environment variables & secrets
+.env
+backend/.env
+.env.local
+.env.*.local
+
+# Build outputs
+frontend/dist/
+dist/
+
+# OS metadata
+.DS_Store
+Thumbs.db
