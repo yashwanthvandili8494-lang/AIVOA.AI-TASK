@@ -69,6 +69,7 @@ const LogsTable = () => {
                 <th>Date & Time</th>
                 <th>Sentiment</th>
                 <th>Materials Shared</th>
+                <th>Samples Distributed</th>
                 <th>Outcomes</th>
               </tr>
             </thead>
@@ -100,6 +101,17 @@ const LogsTable = () => {
                       {log.materialsShared && log.materialsShared.length > 0 ? (
                         log.materialsShared.map((mat, i) => (
                           <span key={i} className="table-mini-chip">{mat}</span>
+                        ))
+                      ) : (
+                        <span className="no-materials-label">-</span>
+                      )}
+                    </div>
+                  </td>
+                  <td>
+                    <div className="log-chips-container">
+                      {log.samplesDistributed && log.samplesDistributed.length > 0 ? (
+                        log.samplesDistributed.map((sam, i) => (
+                          <span key={i} className="table-mini-chip sample-chip-mini">{sam}</span>
                         ))
                       ) : (
                         <span className="no-materials-label">-</span>
